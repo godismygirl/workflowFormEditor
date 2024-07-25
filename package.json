@@ -1,0 +1,46 @@
+{
+  "private": true,
+  "author": "FangQi <godismygirl@gmal.com>",
+  "scripts": {
+    "build": "max build",
+    "dev": "max dev",
+    "format": "prettier --cache --write .",
+    "postinstall": "max setup",
+    "prepare": "husky install",
+    "setup": "max setup",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "@dnd-kit/sortable": "^8.0.0",
+    "@umijs/max": "^4.0.87",
+    "antd": "^5.10.0",
+    "downloadjs": "^1.4.7",
+    "hox": "^2.1.1",
+    "html2canvas": "^1.4.1",
+    "js-base64": "^3.7.7",
+    "jsencrypt": "^3.3.2",
+    "print-js": "^1.6.0",
+    "react": "^18.2.0",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
+    "react-dom": "^18.2.0",
+    "react-draggable-list": "^4.1.0",
+    "react-pullload": "^1.2.0",
+    "react-signature-pad-wrapper": "^3.3.4",
+    "react-touch-loader": "^1.1.4",
+    "react-vant": "^3.3.2",
+    "reto": "^0.9.3",
+    "spark-md5": "^3.0.2",
+    "uid": "^2.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "prettier-plugin-organize-imports": "^2",
+    "prettier-plugin-packagejson": "^2",
+    "typescript": "^5.0.0"
+  }
+}

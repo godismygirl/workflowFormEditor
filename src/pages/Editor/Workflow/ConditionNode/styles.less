@@ -1,0 +1,109 @@
+@line-color: #ddd;
+@bg-color: #f5f5f5;
+@tag-bg: #fff;
+@tag-active: #1677ff;
+@tag-error: #e74c3c;
+@tag-hover: rgba(0, 0, 0, 0.05);
+@tag-radius: 5px;
+
+.conditionWrapper {
+  padding-top: 30px;
+  width: 210px;
+  position: relative;
+}
+
+.condition {
+  position: relative;
+  z-index: 2;
+  border-radius: @tag-radius;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  color: #333;
+  line-height: 18px;
+  background: @tag-bg;
+  box-sizing: border-box;
+  padding: 10px 12px;
+
+  .header {
+    display: flex;
+    align-items: center;
+
+    .stream {
+      flex-grow: 1;
+      overflow: hidden;
+      color: #f60;
+      font-weight: bold;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .priority {
+      //color: #999;
+      padding-left: 5px;
+      flex-shrink: 0;
+    }
+  }
+
+  .body {
+    margin-top: 10px;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    padding: 6px 6px 6px 12px;
+
+    .arrow {
+      color: #999;
+      padding-left: 3px;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    .toolbar {
+      opacity: 1;
+    }
+  }
+
+  .toolbar {
+    opacity: 0;
+    transition: opacity 0.3s linear;
+    position: absolute;
+    top: -24px;
+    right: 0;
+  }
+
+  .delBtn {
+    background: #1677ff;
+    border-radius: 3px;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+  }
+}
+
+.hasResult {
+  color: #333;
+  flex-grow: 1;
+  overflow: hidden;
+  word-break: break-all;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.noResult {
+  color: #999;
+  flex-grow: 1;
+}
+
+.activeTag {
+  outline: 2px solid @tag-active;
+}
+
+.errorTag {
+  outline: 2px solid @tag-error;
+}

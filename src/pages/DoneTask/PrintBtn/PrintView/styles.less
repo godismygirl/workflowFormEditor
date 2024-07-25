@@ -1,0 +1,82 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  padding-top: 10px;
+  background: #fff;
+}
+.container {
+  box-sizing: border-box;
+  padding: 50px;
+  max-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  .inner {
+    width: 840px;
+    height: 1176px;
+    overflow: hidden;
+  }
+
+  .scrollCanvas {
+    width: 3000px;
+    height: 3000px;
+    padding: 1px;
+  }
+}
+
+.signBox {
+  display: inline-block;
+  text-align: center;
+}
+
+.auditSection {
+  border-top: 1px solid #000;
+  display: flex;
+  position: relative;
+
+  &:first-child {
+    border-top: 0;
+  }
+
+  .auditNode {
+    border-right: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    flex-basis: 20%;
+    flex-shrink: 0;
+  }
+
+  .auditContent {
+    flex-grow: 1;
+    padding: 5px;
+
+    .auditRow {
+      display: flex;
+    }
+  }
+
+  .auditSign {
+    float: right;
+    overflow: hidden;
+  }
+}
+
+.subTable {
+  width: 100%;
+
+  th {
+    text-align: left;
+    border: 1px solid #000;
+    padding: 5px;
+  }
+
+  td {
+    border: 1px solid #000;
+    padding: 5px;
+  }
+}

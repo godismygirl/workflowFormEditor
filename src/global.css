@@ -1,0 +1,46 @@
+html,
+body,
+#root,
+#root-master {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* .auto-fit-tab{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.auto-fit-tab .ant-tabs-content-holder{
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.auto-fit-tab .ant-tabs-content-holder .ant-tabs-content{
+  height: 100%;
+  position: relative;
+}
+
+.auto-fit-tab .ant-tabs-content-holder  .ant-tabs-tabpane{
+  height: 100%;
+}
+
+.ant-tabs-nav-list .ant-tabs-tab{
+  padding: 15px 0;
+} */
+
+.ant-tabs .ant-tabs-nav{
+  margin-bottom:0!important;
+}
+
+:root{
+  --rv-input-disabled-text-color:#8f8f8f!important;
+}
+
+/*lucksheet override*/
+.luckysheet{
+  background: transparent !important;
+}

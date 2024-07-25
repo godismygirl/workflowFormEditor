@@ -1,0 +1,43 @@
+.box {
+  flex: 0 0 50%;
+  padding: 3px;
+
+  .inner {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    font-weight: bold;
+    padding: 10px 15px;
+  }
+
+  .body {
+    flex-grow: 1;
+    padding: 0 15px;
+  }
+
+  .footer {
+    border-top: 1px solid #ddd;
+    padding: 10px 15px;
+    display: flex;
+
+    .switch {
+      flex-grow: 1;
+    }
+  }
+}
+
+.row {
+  display: flex;
+  margin-bottom: 4px;
+  .label {
+    color: #999;
+    margin-right: 5px;
+  }
+  .value {
+  }
+}

@@ -1,0 +1,60 @@
+@line-color: #ddd;
+@bg-color: #f5f5f5;
+@tag-bg: #fff;
+@tag-active: #1677ff;
+@tag-error: #e74c3c;
+@tag-hover: rgba(0, 0, 0, 0.05);
+@tag-radius: 5px;
+
+.conditionWrapper {
+  padding-top: 30px;
+  width: 210px;
+  position: relative;
+}
+
+.condition {
+  position: relative;
+  z-index: 2;
+  border-radius: @tag-radius;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  color: #333;
+  line-height: 18px;
+  background: @tag-bg;
+  box-sizing: border-box;
+  padding: 12px;
+  width: 140px;
+
+  .header {
+    display: flex;
+    align-items: center;
+
+    .danger {
+      flex-grow: 1;
+      overflow: hidden;
+      color: #f60;
+      font-weight: bold;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      text-align: center;
+    }
+
+    .normal {
+      flex-grow: 1;
+      overflow: hidden;
+      color: #27ae60;
+      font-weight: bold;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      text-align: center;
+    }
+  }
+}
+
+.activeTag {
+  outline: 2px solid @tag-active;
+}
+
+.errorTag {
+  outline: 2px solid @tag-error;
+}

@@ -1,0 +1,36 @@
+.changeRow {
+  display: flex;
+  padding-top: 12px;
+
+  .label {
+    flex-grow: 1;
+    color: #ff4d4f;
+  }
+}
+
+.errorDesc{
+  color: #ff4d4f;
+}
+
+.noMessage{
+  :global{
+    .ant-form-item-explain-error{
+      display: none!important;
+    }
+  }
+}
+
+.nameBanner{
+  background: #ffeaa7;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 20px;
+
+  span{
+    color: #888;
+  }
+}

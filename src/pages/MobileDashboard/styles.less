@@ -1,0 +1,89 @@
+.container {
+  height: 100%;
+  overflow: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  .statistic {
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .apps {
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 150px;
+    position: relative;
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  padding: 0 15px;
+  height: 90px;
+  cursor: pointer;
+
+  .left {
+    flex-grow: 1;
+    text-align: center;
+    .title {
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: #888;
+    }
+
+    .count {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+
+  .icon {
+    font-size: 40px;
+  }
+}
+
+.appBox {
+  flex-basis: 33.3%;
+  text-align: center;
+  flex-shrink: 0;
+  padding: 5px;
+
+  .app {
+    border-radius: 4px;
+    padding: 15px 5px;
+
+    &:hover {
+      background: #f8f8f8;
+    }
+
+    .appIcon {
+      cursor: pointer;
+    }
+
+    .appName {
+      padding-top: 10px;
+      font-size: 14px;
+    }
+
+    .desc {
+      color: #999;
+      font-size: 12px;
+      padding-top: 15px;
+      padding-bottom: 8px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.item {
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0 15px;
+  line-height: 40px;
+  //position: fixed;
+  //z-index: 100;
+  width: 320px;
+  background: #fff;
+  display: flex;
+  cursor: grab;
+
+  .itemIcon {
+    font-size: 14px;
+    color: #999;
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+
+  .text {
+    flex-grow: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}

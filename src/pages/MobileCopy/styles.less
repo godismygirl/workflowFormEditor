@@ -1,0 +1,47 @@
+.container {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.item {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 20px;
+  position: relative;
+
+  .header {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+}
+
+.row {
+  display: flex;
+  padding: 2px 0;
+  font-size: 13px;
+
+  .label {
+    color: #777;
+    padding-right: 5px;
+    flex-shrink: 0;
+  }
+
+  .content {
+    overflow: auto;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 50px;
+  }
+}
+.list {
+  height: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.tag {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}

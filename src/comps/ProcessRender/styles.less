@@ -1,0 +1,173 @@
+.container {
+  position: relative;
+  min-height: 200px;
+}
+
+.row {
+  display: flex;
+  padding: 10px 0;
+  cursor: pointer;
+  position: relative;
+
+  &:hover {
+    background: #f8f8f8;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 30px;
+    background: #ddd;
+  }
+
+  .radioCol {
+    position: absolute;
+    :global {
+      .ant-radio-wrapper {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .time {
+    flex-basis: 95px;
+    padding-left: 15px;
+    flex-shrink: 0;
+    .timeBox {
+      text-align: center;
+      .day {
+        font-size: 14px;
+        line-height: 14px;
+      }
+      .minute {
+        font-size: 12px;
+        color: #999;
+      }
+    }
+  }
+
+  .icon {
+    padding: 0 15px;
+
+    .avatar {
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+      color: #fff;
+      text-align: center;
+      line-height: 34px;
+      font-size: 20px;
+      background: #1677ff;
+      border-radius: 50%;
+      position: relative;
+      z-index: 1;
+    }
+
+    .miniAvatar {
+      font-size: 14px;
+      line-height: 14px;
+      position: absolute;
+      bottom: 0;
+      right: -8px;
+    }
+  }
+
+  .endIcon {
+    .icon();
+    .avatar {
+      background: #666;
+    }
+  }
+
+  .user {
+    font-size: 14px;
+    flex-grow: 1;
+
+    .nodeName {
+      color: #333;
+      font-weight: bold;
+      max-width: 260px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .comment {
+      font-size: 12px;
+      color: #999;
+    }
+
+    .sign {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background: #fff;
+      padding: 3px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+  }
+}
+
+.userRow {
+  margin-bottom: 8px;
+  position: relative;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .userSummary {
+    display: flex;
+
+    .char {
+      color: #999;
+      flex-basis: 130px;
+    }
+
+    .charTime {
+      flex-grow: 1;
+      text-align: right;
+      color: #999;
+    }
+  }
+}
+
+.endRow {
+  .row();
+  cursor: default;
+  &:hover {
+    background: none;
+  }
+  &::before {
+    display: none;
+  }
+}
+
+.subBox {
+  background: #f0f0f0;
+  padding: 8px 10px;
+  border-radius: 4px;
+
+  .forwardRow {
+    color: #999;
+  }
+}
+
+.subRow {
+  font-size: 12px;
+  margin-top: 5px;
+  &:first-child {
+    margin-top: 0;
+  }
+  .subLabel {
+    margin-right: 5px;
+    color: #888;
+  }
+}
+
+.link {
+  display: inline-block;
+}

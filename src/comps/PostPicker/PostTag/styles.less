@@ -1,0 +1,32 @@
+.tag {
+  border: 1px solid #1677ff;
+  border-radius: 4px;
+  color: #1677ff;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  padding: 0 5px;
+
+  .tagName {
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    //text-overflow: ellipsis;
+  }
+
+  .removeIcon {
+    flex-basis: 20px;
+    flex-shrink: 0;
+    padding-left: 5px;
+    cursor: pointer;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
+.disabledTag {
+  .tag();
+  border: 1px solid #ddd;
+  color: #999;
+}

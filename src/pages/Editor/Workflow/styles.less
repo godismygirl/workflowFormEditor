@@ -1,0 +1,142 @@
+@line-color: #ddd;
+@bg-color: #f8f8f8;
+@primary-color: #1677ff;
+
+.wrapper {
+  height: calc(100vh - 58px);
+  overflow: auto;
+  background: @bg-color;
+}
+
+.mapContainer {
+  height: 100%;
+  // position: relative;
+}
+.map {
+  padding-top: 50px;
+  min-width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+.branchWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.branch {
+  display: flex;
+  border-top: 2px solid @line-color;
+  border-bottom: 2px solid @line-color;
+  position: relative;
+  box-sizing: border-box;
+}
+.col {
+  min-width: 200px;
+  background: @bg-color;
+  position: relative;
+  flex-grow: 1;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px 0 20px;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    border-right: 2px solid @line-color;
+    left: 50%;
+    margin-left: -1px;
+  }
+
+  .topLeftCover {
+    display: block;
+    width: 50%;
+    position: absolute;
+    height: 4px;
+    background: @bg-color;
+    left: -1px;
+    top: -3px;
+  }
+  .bottomLeftCover {
+    display: block;
+    width: 50%;
+    position: absolute;
+    height: 4px;
+    background: @bg-color;
+    left: -1px;
+    bottom: -3px;
+  }
+  .topRightCover {
+    display: block;
+    width: 50%;
+    position: absolute;
+    height: 4px;
+    background: @bg-color;
+    right: -1px;
+    top: -3px;
+  }
+  .bottomRightCover {
+    display: block;
+    width: 50%;
+    position: absolute;
+    height: 4px;
+    background: @bg-color;
+    right: -1px;
+    bottom: -3px;
+  }
+}
+
+.taskEnd {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: #ccc;
+    left: 50%;
+    margin-left: -5px;
+    top: 0;
+  }
+
+  .endIcon {
+    display: inline-block;
+    width: 80px;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 22px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    font-style: normal;
+  }
+}
+
+.timeout {
+  position: absolute;
+  color: #666;
+  z-index: 10;
+  width: 28px;
+  height: 28px;
+  border: 2px solid #ddd;
+  border-radius: 50px;
+  background: #fff;
+  left: 50%;
+  top: -14px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: #ccc;
+}

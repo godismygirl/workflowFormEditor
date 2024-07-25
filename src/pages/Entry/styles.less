@@ -1,0 +1,109 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px 100px;
+  background: #f8f8f8;
+  border-bottom: 1px solid #eee;
+
+  .title {
+    flex-grow: 1;
+    font-size: 18px;
+    font-family: 'Microsoft Yahei';
+    font-weight: bold;
+    color: #444;
+  }
+}
+
+.container {
+  box-sizing: border-box;
+  padding: 20px;
+  max-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  position: relative;
+
+  .empty {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    :global {
+      .ant-empty-description {
+        color: #aaa;
+      }
+    }
+  }
+}
+
+.appBox {
+  flex-basis: 20%;
+  flex-shrink: 0;
+  padding: 5px;
+
+  .app {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 12px 15px;
+    background: #fff;
+    // cursor: pointer;
+
+    // &:hover {
+    //   border-color: #1677ff;
+    // }
+
+    .row {
+      display: flex;
+      align-items: center;
+    }
+
+    .appIcon {
+      flex-shrink: 0;
+      flex-basis: 40px;
+      min-height: 40px;
+    }
+
+    .appName {
+      padding-left: 10px;
+      flex-grow: 1;
+    }
+
+    .desc {
+      color: #999;
+      font-size: 12px;
+      padding-top: 15px;
+      padding-bottom: 8px;
+    }
+
+    .footer {
+      display: flex;
+      align-items: center;
+      .status {
+        flex-grow: 1;
+      }
+    }
+  }
+}
+
+.tag {
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 4px;
+  padding: 0 8px;
+  margin-right: 8px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  font-size: 14px;
+}
+.activeTag {
+  .tag();
+  background: rgba(0, 176, 66, 0.12);
+  color: #00b042;
+}
+
+.inactiveTag {
+  .tag();
+  background: rgba(255, 146, 0, 0.12);
+  color: #ff9200;
+}

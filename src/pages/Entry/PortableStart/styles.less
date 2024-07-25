@@ -1,0 +1,31 @@
+.outterBox {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-grow: 1;
+  overflow-y: auto;
+
+  .formCol {
+    flex-basis: 500px;
+    flex-shrink: 0;
+    padding-right: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .processCol {
+    flex-grow: 1;
+  }
+}
+
+.footer {
+  border-top: 1px solid #eee;
+  background: #fff;
+  padding-top: 15px;
+  text-align: right;
+}

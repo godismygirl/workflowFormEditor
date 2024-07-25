@@ -1,0 +1,32 @@
+.outline {
+  flex-basis: 50%;
+  padding: 5px;
+}
+
+.item {
+  //border: 1px solid #ddd;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  border-radius: 4px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+  color: #333;
+  border: 1px solid #fff;
+  cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+    border-color: #1677ff;
+    color: #1677ff;
+  }
+
+  .text {
+    padding-left: 8px;
+  }
+}
+
+.isDraging {
+  color: rgba(0, 0, 0, 0.5);
+  background: #f8f8f8;
+}

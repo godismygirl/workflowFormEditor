@@ -1,0 +1,79 @@
+.apps{
+    flex-grow: 1;
+    :global{
+        .ant-btn > span{
+            font-size: 12px;
+        }
+    }
+
+    .appList{
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    
+}
+
+.orgs{
+    padding-right: 10px;
+}
+
+.appItem{
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    
+    cursor: pointer;
+    
+    &:hover{
+        background: #f5f5f5;
+    }
+
+    // .logo{
+    //     width: 60px;
+    //     height: 60px;
+    // }
+    .checked{
+        position: absolute;
+        left:8px;
+        top:50%;
+        margin-top:-8px;
+        color: #1890ff;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .content{
+        padding-left: 20px;
+    }
+
+    .title{
+        font-size: 16px;
+        font-weight: bold;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space:nowrap;
+        max-width: 350px;
+    }
+
+    .desc{
+        color: #888;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space:nowrap;
+        max-width: 350px;
+    }
+}
+
+.activeAppItem{
+    .appItem();
+    
+    .title{
+        color:#1890ff;
+    }
+    .desc{
+        color:#3ca1ff;
+    }
+}
+
